@@ -8,7 +8,7 @@
  *
  * @author Amanda
  */
-abstract class Animal {
+abstract class Animal implements IAnimalFeed{
     
     protected String animal; // ex. Hund
     protected String name; // ex. Lola
@@ -33,6 +33,7 @@ abstract class Animal {
     
     }
     
+    @Override
     public String getName(){
         return name;
     
@@ -52,7 +53,8 @@ abstract class Animal {
         return weight;
     }
     
-    public void food(){} 
+    @Override
+    public void food(){}
    
     public void setAnimal(String animal){
         this.animal = animal;

@@ -10,8 +10,7 @@
  */
 public interface IAnimalFeed { // ett interface
     
-    String getName();
-    
+    String getName(); 
     void food(); //
     
 }
