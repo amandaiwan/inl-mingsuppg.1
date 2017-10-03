@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author Amanda
  */
-public class AnimalDemo {
+public class AnimalDemo { 
     
     public AnimalDemo() {
         
@@ -20,7 +20,7 @@ public class AnimalDemo {
 
         List<IAnimalFeed> allAnimalFeed = backend.getAllAnimalFeed(); //hämtar in min lista
 
-        while (true) {
+        while (true) { 
             String s = JOptionPane.showInputDialog("Vilket djur ska få mat?");
             if (s == null || s.equals("")) {
                 System.exit(0);
@@ -29,21 +29,21 @@ public class AnimalDemo {
             boolean animalHere = false;
             for (IAnimalFeed a : allAnimalFeed) { // för varje objekt i listan, låter man det objektet med h. En lokal variabel
                 if (a.getName().equalsIgnoreCase(s)) {
-                    JOptionPane.showMessageDialog(null, a.getAnimal() + "en " + a.getName() + " ska ha " + a.getFood());
+                    a.food();
                     animalHere = true;
                 }
             }
-            if (!animalHere) {
+            if (!animalHere) { //
                 JOptionPane.showMessageDialog(null, "Djuret finns inte på detta hotell, försök igen.");
             }
             
-        }
+        }// avslutar while
         
     }
     
     public static void main(String[] args) {
         
-        AnimalDemo a = new AnimalDemo();
+        AnimalDemo a = new AnimalDemo(); ////skapar en instans av objektet 
         
     }
     

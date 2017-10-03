@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,22 +13,23 @@
  */
 public class Cat extends Animal implements IAnimalFeed {
     
-    protected double catFeed; //hejhej
+    protected double catFeed; //instansvariabel
     
-    Cat(){}
+    Cat(){} // en tom konstruktor
     
-    Cat(String animal, String name, double age, String gender, double weight){
+    Cat(String animal, String name, double age, String gender, double weight){ //en konstruktor med parametrar
         super(animal, name, age, gender, weight);
         
     }
-
+   
     @Override
-    public String getFood() {
+    public void food() { // Dynamisk bindning
        catFeed = weight/150;
         String s = ""; 
-        s += (int)catFeed + "g kattfoder";
+        s += (int)catFeed + " gram kattfoder";
         
-        return s;
+        JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
+        
     }
 }
 

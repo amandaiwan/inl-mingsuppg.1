@@ -15,7 +15,6 @@ abstract class Animal {
     protected double age;
     protected String gender;
     protected double weight;
-    protected String food;
     
     
     Animal(){}
@@ -53,12 +52,8 @@ abstract class Animal {
         return weight;
     }
     
-    public String getFood(){
-        return food;
-    }
-    
-    
-    
+    public void food(){} 
+   
     public void setAnimal(String animal){
         this.animal = animal;
     }
@@ -79,11 +74,5 @@ abstract class Animal {
     public void setWeight(double weight){
         this.weight = weight;
     }
-
-    public void setFood(String food){
-        this.food = food;
-    }
-    
-    
         
 }

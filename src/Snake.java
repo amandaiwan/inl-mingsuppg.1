@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +13,7 @@
  */
 public class Snake extends Animal implements IAnimalFeed {
 
-    protected static final int SNAKE_PELLETS = 20;
+    protected static final int SNAKE_PELLETS = 20; //instansvariabel
 
     Snake() {
     }
@@ -20,11 +23,11 @@ public class Snake extends Animal implements IAnimalFeed {
     }
 
     @Override
-    public String getFood() {
+    public void food() {
         String s = "";
         s += SNAKE_PELLETS + "g ormpellets";
 
-        return s;
+        JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
     }
 
 }

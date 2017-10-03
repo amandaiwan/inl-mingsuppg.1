@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +13,7 @@
  */
 public class Dog extends Animal implements IAnimalFeed {
 
-    protected double dogFeed;
+    protected double dogFeed; //en instansvariabel
 
     Dog() {
     }
@@ -21,12 +24,12 @@ public class Dog extends Animal implements IAnimalFeed {
     }
 
     @Override
-    public String getFood() {
+    public void food() {
         dogFeed = weight / 100;
         String s = "";
         s += (int) dogFeed + "g hundfoder";
 
-        return s;
+        JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
 
     }
 

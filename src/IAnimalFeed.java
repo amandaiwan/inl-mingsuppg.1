@@ -8,10 +8,10 @@
  *
  * @author Amanda
  */
-public interface IAnimalFeed {
+public interface IAnimalFeed { // ett interface
     
-    String getAnimal();
     String getName();
-    String getFood();
+    
+    void food(); //
     
 }
