@@ -10,7 +10,7 @@
  */
 public class Cat extends Animal implements IAnimalFeed {
     
-    protected double catFeed;
+    protected double catFeed; //hejhej
     
     Cat(){}
     
