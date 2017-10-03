@@ -10,11 +10,11 @@
  */
 abstract class Animal implements IAnimalFeed{
     
-    protected String animal; // ex. Hund
-    protected String name; // ex. Lola
-    protected double age;
-    protected String gender;
-    protected double weight;
+    private String animal; // ex. Hund
+    private String name; // ex. Lola
+    private double age;
+    private String gender;
+    private double weight;
     
     
     Animal(){}

@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Cat extends Animal implements IAnimalFeed {
     
-    protected double catFeed; //instansvariabel
+    private double catFeed; //instansvariabel
     
     Cat(){} // en tom konstruktor
     
@@ -23,8 +23,8 @@ public class Cat extends Animal implements IAnimalFeed {
     }
    
     @Override
-    public void food() { // Dynamisk bindning
-       catFeed = weight/150;
+    public void food() { // Dynamisk bindning + polymorfism.
+       catFeed = getWeight() /150;
         String s = ""; 
         s += (int)catFeed + " gram kattfoder";
         

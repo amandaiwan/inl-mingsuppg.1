@@ -15,12 +15,12 @@ import java.util.List;
 public class BackendAnimal {
 
    private final Animal sixten = new Dog("Hund", "Sixten", 4, "Hane", 5000);  // Här refererar jag till ett objekt via objektets superklasser
-   private final Animal dogge = new Dog("Hund", "Dogge", 15, "Hane", 10000); //Samma anrop kan ge olika resultat beroende på objektets typ.
+   private final Animal dogge = new Dog("Hund", "Dogge", 15, "Hane", 10000); 
    private final Animal venus = new Cat("Katt", "Venus", 7, "Hona", 5000); 
-   private final Animal ove = new Cat("Katt", "Ove", 7, "Hane", 3000); //tilldelning
+   private final Animal ove = new Cat("Katt", "Ove", 7, "Hane", 3000); 
    private final Animal hypno = new Snake("Orm", "Hypno", 8, "Hane", 1000);
     
-      public List<IAnimalFeed> getAllAnimalFeed() { //lägget till metoden getAllAnimalFeed()
+      public List<IAnimalFeed> getAllAnimalFeed() { //lägge till metoden getAllAnimalFeed()
 
         List<IAnimalFeed> allAnimalFeed = new ArrayList<>(); //Skapar en lista som ska innehålla:
         allAnimalFeed.add(sixten);
