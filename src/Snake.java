@@ -23,10 +23,11 @@ public class Snake extends Animal implements IAnimalFeed {
         super(animal, name, age, gender, weight);
     }
 
-    @Override //Dynamisk bindning + polymorfism
+    //polymorfism -  I Java när ett objekt kan anta många former vid körtid
+    @Override //Dynamisk bindning
     public void food() { 
         String s = "";
-        s += SNAKE_PELLETS + "g ormpellets";
+        s += SNAKE_PELLETS + "gram ormpellets";
 
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
     }

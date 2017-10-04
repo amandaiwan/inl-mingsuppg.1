@@ -24,11 +24,12 @@ public class Dog extends Animal implements IAnimalFeed {
 
     }
 
-    @Override //Dynamisk bindning + polymorfism
+    //polymorfism -  I Java när ett objekt kan anta många former vid körtid
+    @Override //Dynamisk bindning
     public void food() { 
         dogFeed = getWeight() / 100;
         String s = "";
-        s += (int) dogFeed + "g hundfoder";
+        s += (int) dogFeed + "gram hundfoder";
 
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
 

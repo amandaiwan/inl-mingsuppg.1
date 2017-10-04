@@ -23,12 +23,12 @@ public class Cat extends Animal implements IAnimalFeed {
         
     }
    
-    //polymorfism
+    //polymorfism -  I Java när ett objekt kan anta många former vid körtid
     @Override //Dynamisk bindning
     public void food() {  
        catFeed = getWeight() /150;
         String s = ""; 
-        s += (int)catFeed + " gram kattfoder";
+        s += (int)catFeed + "gram kattfoder";
         
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
         
