@@ -14,11 +14,15 @@ import java.util.List;
  */
 public class BackendAnimal {
 
-   private final Animal sixten = new Dog("Hund", "Sixten", 4, "Hane", 5000);  // Här refererar jag till ett objekt via objektets superklasser
-   private final Animal dogge = new Dog("Hund", "Dogge", 15, "Hane", 10000); //beroende på objektets typ, anropas olika instansmetoder 
+    //Polymorfism - när ett objekt antar en annan form 
+    // Här refererar jag till ett objekt via objektets superklasser
+    //beroende på objektets typ, anropas olika instansmetoder 
+   private final Animal sixten = new Dog("Hund", "Sixten", 4, "Hane", 5000); 
+   private final Animal dogge = new Dog("Hund", "Dogge", 15, "Hane", 10000); 
    private final Animal venus = new Cat("Katt", "Venus", 7, "Hona", 5000); 
    private final Animal ove = new Cat("Katt", "Ove", 7, "Hane", 3000); 
    private final Animal hypno = new Snake("Orm", "Hypno", 8, "Hane", 1000);
+   
     
       public List<IAnimalFeed> getAllAnimalFeed() { 
 

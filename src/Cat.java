@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Cat extends Animal implements IAnimalFeed {
     
+    //private
     private double catFeed; //instansvariabel
     
     Cat(){} // en tom konstruktor

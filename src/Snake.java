@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Snake extends Animal implements IAnimalFeed {
 
+    //private
     private static final int SNAKE_PELLETS = 20; //instansvariabel
 
     Snake() {
@@ -22,8 +23,8 @@ public class Snake extends Animal implements IAnimalFeed {
         super(animal, name, age, gender, weight);
     }
 
-    @Override
-    public void food() { //dynamisk bindning + polymorfism 
+    @Override //Dynamisk bindning + polymorfism
+    public void food() { 
         String s = "";
         s += SNAKE_PELLETS + "g ormpellets";
 

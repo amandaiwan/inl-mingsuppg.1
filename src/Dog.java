@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Dog extends Animal implements IAnimalFeed {
 
+    //private
     private double dogFeed; //en instansvariabel
 
     Dog() {
@@ -23,8 +24,8 @@ public class Dog extends Animal implements IAnimalFeed {
 
     }
 
-    @Override
-    public void food() { // dynamisk bindning + polymorfism  
+    @Override //Dynamisk bindning + polymorfism
+    public void food() { 
         dogFeed = getWeight() / 100;
         String s = "";
         s += (int) dogFeed + "g hundfoder";

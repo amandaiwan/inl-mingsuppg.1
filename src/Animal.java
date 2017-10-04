@@ -10,9 +10,10 @@
  */
 abstract class Animal implements IAnimalFeed{
     
-    //En inkapsling och deklarerat Private, så om superklassens data och metoder ska vara åtkomliga behövs getter.
-    private String animal; // ex. Hund 
-    private String name; 
+    //En inkapsling och deklarerat Private, så om superklassens data och metoder ska vara åtkomliga behövs publica getter/setter. 
+    //hade man använt en modifierare, kommer man åt variablerna via variabelnamnet
+    private String animal; 
+    private String name; // ex. Lola 
     private double age;
     private String gender;
     private double weight; //ex. 3000g
@@ -29,13 +30,13 @@ abstract class Animal implements IAnimalFeed{
 
     }
     
-    public String getAnimal(){
+    public String getAnimal(){ 
         return animal;
     
     }
     
     @Override
-    public String getName(){
+    public String getName(){ //hämtar namnet
         return name;
     
     }
