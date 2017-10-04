@@ -11,6 +11,7 @@
 public interface IAnimalFeed { // ett interface
     
     String getName(); 
-    void food(); // 
+    
+    void food();  // 
     
 }

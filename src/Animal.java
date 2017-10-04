@@ -10,11 +10,12 @@
  */
 abstract class Animal implements IAnimalFeed{
     
-    private String animal; // ex. Hund
-    private String name; // ex. Lola
+    //En inkapsling och deklarerat Private, så om superklassens data och metoder ska vara åtkomliga behövs getter.
+    private String animal; // ex. Hund 
+    private String name; 
     private double age;
     private String gender;
-    private double weight;
+    private double weight; //ex. 3000g
     
     
     Animal(){}
@@ -55,26 +56,5 @@ abstract class Animal implements IAnimalFeed{
     
     @Override
     public void food(){}
-   
-    public void setAnimal(String animal){
-        this.animal = animal;
-    }
-    
-    
-    public void setName(String name){
-        this.name = name;
-    }
-    
-    public void setAge(int age){
-        this.age = age;
-    }
-    
-    public void setGender(String gender){
-        this.gender = gender;
-    }
-    
-    public void setWeight(double weight){
-        this.weight = weight;
-    }
         
 }

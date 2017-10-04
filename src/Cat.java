@@ -17,13 +17,13 @@ public class Cat extends Animal implements IAnimalFeed {
     
     Cat(){} // en tom konstruktor
     
-    Cat(String animal, String name, double age, String gender, double weight){ //en konstruktor med parametrar
+    public Cat(String animal, String name, double age, String gender, double weight){ //en konstruktor med parametrar
         super(animal, name, age, gender, weight);
         
     }
    
-    @Override
-    public void food() { // Dynamisk bindning + polymorfism.
+    @Override //Dynamisk bindning + polymorfism
+    public void food() {  
        catFeed = getWeight() /150;
         String s = ""; 
         s += (int)catFeed + " gram kattfoder";
