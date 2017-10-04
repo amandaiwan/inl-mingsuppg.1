@@ -23,7 +23,7 @@ public class Snake extends Animal implements IAnimalFeed {
         super(animal, name, age, gender, weight);
     }
 
-    //polymorfism -  I Java när ett objekt kan anta många former vid körtid
+    //polymorfism -  Om en metodanrop sker ges olika resultat beroende på objektets typ.
     @Override //Dynamisk bindning
     public void food() { 
         String s = "";

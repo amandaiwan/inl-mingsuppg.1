@@ -30,7 +30,7 @@ public class AnimalDemo {
             boolean animalHere = false;
             for (IAnimalFeed a : allAnimalFeed) { // för varje objekt i listan, låter man det objektet med h. En lokal variabel
                 if (a.getName().equalsIgnoreCase(s)) {
-                    a.food(); // Polymorfismen - Samma anrop kan ge olika resultat beroende på objektets typ.
+                    a.food(); // Polymorfismen - Samma anrop men ger olika resultat beroende på objektets typ.
                     animalHere = true;
                 }
             }

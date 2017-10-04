@@ -23,10 +23,10 @@ abstract class Animal implements IAnimalFeed{
     
     Animal(String animal, String name, double age, String gender, double weight){
         this.animal = animal;
-        this.name = name;
+        this.name = name; //sätter namn
         this.age = age;
         this.gender = gender;
-        this.weight = weight;
+        this.weight = weight; //sätter vikt
 
     }
     
@@ -51,7 +51,7 @@ abstract class Animal implements IAnimalFeed{
     
     }
     
-    public double getWeight(){
+    public double getWeight(){ //hämtar vikt
         return weight;
     }
     
