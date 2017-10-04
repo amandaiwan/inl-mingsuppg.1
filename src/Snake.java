@@ -25,7 +25,7 @@ public class Snake extends Animal implements IAnimalFeed {
     @Override //Dynamisk bindning
     public void food() { 
         String s = "";
-        s += SNAKE_PELLETS + "gram ormpellets";
+        s += SNAKE_PELLETS + " gram ormpellets";
 
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
     }

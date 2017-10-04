@@ -26,7 +26,7 @@ public class Dog extends Animal implements IAnimalFeed {
     public void food() { 
         dogFeed = getWeight() / 100;
         String s = "";
-        s += (int) dogFeed + "gram hundfoder";
+        s += (int) dogFeed + " gram hundfoder";
 
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
 

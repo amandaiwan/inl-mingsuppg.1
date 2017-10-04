@@ -26,7 +26,7 @@ public class Cat extends Animal implements IAnimalFeed {
     public void food() {  
        catFeed = getWeight() /150;
         String s = ""; 
-        s += (int)catFeed + "gram kattfoder";
+        s += (int)catFeed + " gram kattfoder";
         
         JOptionPane.showMessageDialog(null, getAnimal() + "en " + getName() + " ska ha " + s);
         
