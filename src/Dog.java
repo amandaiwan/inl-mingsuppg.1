@@ -19,7 +19,7 @@ public class Dog extends Animal implements IAnimalFeed {
     Dog() {
     }
 
-    Dog(String animal, String name, double age, String gender, double weight) {
+    public Dog(String animal, String name, double age, String gender, double weight) {
         super(animal, name, age, gender, weight);
 
     }

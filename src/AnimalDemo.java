@@ -21,6 +21,7 @@ public class AnimalDemo {
         List<IAnimalFeed> allAnimalFeed = backend.getAllAnimalFeed(); //hämtar in min lista
 
         while (true) { 
+            
             String s = JOptionPane.showInputDialog("Vilket djur ska få mat?");
             if (s == null || s.equals("")) {
                 System.exit(0);

@@ -23,7 +23,8 @@ public class Cat extends Animal implements IAnimalFeed {
         
     }
    
-    @Override //Dynamisk bindning + polymorfism
+    //polymorfism
+    @Override //Dynamisk bindning
     public void food() {  
        catFeed = getWeight() /150;
         String s = ""; 

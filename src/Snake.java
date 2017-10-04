@@ -19,7 +19,7 @@ public class Snake extends Animal implements IAnimalFeed {
     Snake() {
     }
 
-    Snake(String animal, String name, double age, String gender, double weight) {
+    public Snake(String animal, String name, double age, String gender, double weight) {
         super(animal, name, age, gender, weight);
     }
 
