@@ -27,28 +27,23 @@ abstract class Animal implements IAnimalFeed{
         this.age = age;
         this.gender = gender;
         this.weight = weight; //sätter vikt
-
     }
     
     public String getAnimal(){ 
         return animal;
-    
     }
     
     @Override
     public String getName(){ //hämtar namnet
         return name;
-    
     }
     
     public double getAge(){
         return age;
-    
     }
     
     public String getGender(){
         return gender;
-    
     }
     
     public double getWeight(){ //hämtar vikt
