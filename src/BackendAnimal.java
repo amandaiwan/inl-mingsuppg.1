@@ -23,7 +23,7 @@ public class BackendAnimal {
    private final Animal venus = new Cat("Katt", "Venus", 7, "Hona", 5000); 
    private final Animal ove = new Cat("Katt", "Ove", 7, "Hane", 3000); 
    private final Animal hypno = new Snake("Orm", "Hypno", 8, "Hane", 1000);
-   
+ 
     
       public List<IAnimalFeed> getAllAnimalFeed() { 
 

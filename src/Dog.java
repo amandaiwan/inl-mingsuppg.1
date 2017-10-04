@@ -16,12 +16,9 @@ public class Dog extends Animal implements IAnimalFeed {
     //private
     private double dogFeed; //en instansvariabel
 
-    Dog() {
-    }
 
     public Dog(String animal, String name, double age, String gender, double weight) {
         super(animal, name, age, gender, weight);
-
     }
 
     //polymorfism -  Om en metodanrop sker ges olika resultat beroende på objektets typ.

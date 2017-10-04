@@ -16,9 +16,7 @@ public class Snake extends Animal implements IAnimalFeed {
     //private
     private static final int SNAKE_PELLETS = 20; //instansvariabel
 
-    Snake() {
-    }
-
+   
     public Snake(String animal, String name, double age, String gender, double weight) {
         super(animal, name, age, gender, weight);
     }

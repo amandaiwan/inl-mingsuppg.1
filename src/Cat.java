@@ -16,11 +16,9 @@ public class Cat extends Animal implements IAnimalFeed {
     //private
     private double catFeed; //instansvariabel
     
-    Cat(){} // en tom konstruktor
     
     public Cat(String animal, String name, double age, String gender, double weight){ //en konstruktor med parametrar
-        super(animal, name, age, gender, weight);
-        
+        super(animal, name, age, gender, weight);   
     }
    
     //polymorfism -  Om en metodanrop sker ges olika resultat beroende på objektets typ.
