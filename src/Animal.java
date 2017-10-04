@@ -56,6 +56,6 @@ abstract class Animal implements IAnimalFeed{
     }
     
     @Override
-    public void food(){}
+     public void food(){}
         
 }
