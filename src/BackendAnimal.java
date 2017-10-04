@@ -15,7 +15,7 @@ import java.util.List;
 public class BackendAnimal {
 
     //Polymorfism - I Java när ett objekt kan anta många former vid körtid
-
+    
     // Här refererar jag till ett objekt via objektets superklasser
     //beroende på objektets typ, anropas olika instansmetoder 
    private final Animal sixten = new Dog("Hund", "Sixten", 4, "Hane", 5000); //superklassen antar formen av dennes subklass

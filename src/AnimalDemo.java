@@ -34,7 +34,7 @@ public class AnimalDemo {
                     animalHere = true;
                 }
             }
-            if (!animalHere) { //
+            if (!animalHere) { 
                 JOptionPane.showMessageDialog(null, "Djuret finns inte på detta hotell, försök igen.");
             }
             
